@@ -22,4 +22,5 @@ img.portrait {
 img.entryheader {
   width: 50%;
   height: auto;
+  margin-right: 20px;
 }

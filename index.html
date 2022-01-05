@@ -23,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <!--<a class="navbar-brand" href="#"><img class="logo" src="imgs/psom_logo_white@2x.png" alt="PSOM logo" height="40"></a>-->
+      <img class="logo" src="imgs/psom_logo_white@2x.png" alt="PSOM logo" height="10">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,37 +34,63 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="personnel.html">Personnel</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownAboutLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">About</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPubsLink">
+              <a class="dropdown-item" href="about.html">Project Aims</a>
+              <a class="dropdown-item" href="about.html#team">The Team</a>
+              <a class="dropdown-item" href="about.html#facilities">Facilities</a>
+              <a class="dropdown-item" href="about.html#links">CIRP Links</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="models.html">PDA Models</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="data.html" id="navbarDropdownResourceLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">Tools & Resources</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownResourceLink">
+              <a class="dropdown-item" href="data.html">Code & Analysis Tools</a>
+              <a class="dropdown-item" href="data.html#data">Imaging Datasets</a>
+              <a class="dropdown-item" href="data.html#pda">PDA Models</a>
+              <a class="dropdown-item" href="data.html#sop">SOP Directories</a>
+              <a class="dropdown-item" href="https://github.com/PennPancreaticCancerImagingResource">Github Organization</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="data.html" id="navbarDropdownPubsLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">Reseach Dissemination</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPubsLink">
+              <a class="dropdown-item" href="pubs.html">Publications</a>
+              <a class="dropdown-item" href="pubs.html">Abstracts & Proceedings</a>
+              <a class="dropdown-item" href="pubs.html">Presentations</a>
+            </div>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/PennPancreaticCancerImagingResource">GitHub</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
+
         </ul>
       </div>
     </div>
   </nav>
+
+
 
   <!-- Header -->
   <header class="bg-primary py-5 mb-5">
     <div class="container h-100">
       <!--<div class="row h-100 align-items-center">-->
       <div class="row">
-        <div class="col-lg-1"></div>
+        <div class="col-lg-2"></div>
+        <!--
         <div class="col-lg-2 mt-2">
           <img class="psom" src="imgs/psom_logo_white@2x.png" width="100" alt="PSOM logo">
         </div>
-        <div class="col-lg-8">
+         -->
+        <div class="col-lg-8 text-center">
           <h1 class="text-white mb-2">Penn Quantitative Imaging Resource for Pancreatic Cancer</h1>
           <br />
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-2"></div>
       </div>
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -78,62 +104,57 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-8 mb-5">
+      <div class="col-md-10 mb-5">
         <h2>Mission</h2>
-        <hr>
+        <hr class="thickhr">
         <p>Our mission is to facilitate the development of effective therapies for pancreatic ductal adenocarcinoma (PDA) via the applications of imaging tools. We strive to develop robust imaging tools in murine models of PDA and translate them to the clinic in settings of co-clinical imaging.</p>
-        <hr>
+        <br>
         <h2>About the Website</h2>
+        <hr class="thickhr">
         <p>We will be making updates over the course of the U24CA231858 project (9/2018-8/2023). As the project develops, we will share resources and imaging data produced in the project including but not limited to: </p>
         <ul>
           <li>Imaging tool library - Tools including MRI pulse programs and data analysis software developed.</li>
           <li>SOP library – standardized protocols for generations of orthotopic and xenograft models.</li>
           <li>Data repository – preclinical imaging data and IHC data; clinical imaging data and companion clinical information</li>
         </ul>
-        <hr>
-        <h2>Publications</h2>
-        <ol>
-          <li><strong>Cao J, Pickup S, Clendenin C, Blouw B, Choi H, Kang D, Rosen M, O'Dwyer PJ and Zhou R.</strong> <a href="https://doi.org/10.1158/1078-0432.CCR-18-2276">Dynamic contrast-enhanced MRI detects responses to stroma-directed therapy in mouse models of pancreatic ductal adenocarcinoma.</a> Clin Cancer Res. 25:2314-2322 (2019).</li>
-          <li><strong>Shoghi K, Badea C, Blocker S, Chenevert T, Laforest R, Lewis M, Luker G, Manning H, Marcus D, Mowery Y, Pickup S, Richmond A, Ross B, Vilgelm A, Yankeelov T, Zhou R. </strong> <a href="https://pubmed.ncbi.nlm.nih.gov/32879897/">Co-Clinical Imaging Resource Program (CIRP): Bridging the Translational Divide to Advance Precision Medicine.</a> Tomography: A journal for imaging research. 2020 6(3):273-287.</li>
-          <li><strong>Cao J, Song HK, Yang H, Castillo V, Chen J, Clendenin C, Rosen M, Zhou R, Pickup S.</strong> <a href="https://doi.org/10.3390/tomography7010007">Respiratory Motion Mitigation and Repeatability of Two Diffusion-Weighted MRI Methods Applied to a Murine Model of Spontaneous Pancreatic Cancer. </a> Tomography: A journal for imaging research. 2021; 7(1):66-79.</li>
-          <li><strong>Du T, Zhang H, Li Y, Pickup S, Rosen M, Zhou R, Song HK, Fan Y.</strong> <a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841521001444">Adaptive convolutional neural networks for accelerating magnetic resonance imaging via k-space data interpolation</a>. Medical Image Analysis (In print, 2021)</li>
-        </ol>
-        <hr>
+        <br>
 
         <h2>News</h2>
-        <br />
+        <hr class="thickhr">
 
-        <div class="col-md-12 mb-12">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">Welcome Professor James Gee and Jeffrey Duda, PhD to join the U24 team!</h4>
-              <p class="card-text">Drs Gee and Duda bring in outstanding expertise in informatics and will work on resource/ data sharing aspects of the U24 project while collaborating with team members in cross-modality registration and analysis.</p>
-            </div>
-            <div class="card-footer">
-              <!--<a href="#" class="btn btn-primary">Find Out More!</a>-->
-              <p class="text-center">September 1, 2020</p>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <h5 class="card-header text-center bg-blue">Welcome Professor James Gee and Jeffrey Duda, PhD to join the U24 team!</h5>
+              <div class="card-body flex-fill d-flex flex-column">
+                <p class="card-text">Drs Gee and Duda bring in outstanding expertise in informatics and will work on resource/ data sharing aspects of the U24 project while collaborating with team members in cross-modality registration and analysis.</p>
+                <br />
+                <p class="text-center"><em>September 1, 2020</em></p>
+              </div>
             </div>
           </div>
         </div>
 
         <br />
 
-        <div class="col-md-12 mb-5">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4 class="card-title">IRB approval of “A Randomized Pilot Study of Perioperative Nivolumab and Paricalcitol to Target the Microenvironment in Resectable Epithelial Subtype Pancreatic Cancer (NCT03519308)”.</h4>
-              <p class="card-text">University of Pennsylvania Institutional Review Board (IRB) has approved the latest modifications of this trial including the MRI studies which are supported by the U24 resource grant. The MRI protocols on this trial has also been approved by the Center for Magnetic Resonance Imaging & Spectroscopy (CAMRIS).Dr. Peter O’Dwyer, MD is the Principal Investigator of this trial, leading an investigator team from the University of Pennsylvania Abramson Cancer Center, Memorial Sloan Kettering Cancer Center, Salk Institute, and Massachusetts General Hospital. The U24 team members who participate in this clinical study include Drs. Peter O’Dwyer, Thomas Karasic, Mark Rosen, Hee Kwon Song, Rong Zhouand James Gee.</p>
-            </div>
-            <div class="card-footer">
-              <!--<a href="#" class="btn btn-primary">Find Out More!</a>-->
-              <p class="text-center">July 23, 2020</p>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <h5 class="card-header text-center bg-blue">IRB approval of “A Randomized Pilot Study of Perioperative Nivolumab and Paricalcitol to Target the Microenvironment in Resectable Epithelial Subtype Pancreatic Cancer (NCT03519308)”.</h5>
+              <div class="card-body flex-fill d-flex flex-column">
+                <p class="card-text">University of Pennsylvania Institutional Review Board (IRB) has approved the latest modifications of this trial including the MRI studies which are supported by the U24 resource grant. The MRI protocols on this trial has also been approved by the Center for Magnetic Resonance Imaging & Spectroscopy (CAMRIS).Dr. Peter O’Dwyer, MD is the Principal Investigator of this trial, leading an investigator team from the University of Pennsylvania Abramson Cancer Center, Memorial Sloan Kettering Cancer Center, Salk Institute, and Massachusetts General Hospital. The U24 team members who participate in this clinical study include Drs. Peter O’Dwyer, Thomas Karasic, Mark Rosen, Hee Kwon Song, Rong Zhouand James Gee.</p>
+                <br />
+                <p class="text-center"><em>July 23, 2020</em></p>
+              </div>
             </div>
           </div>
         </div>
+
 
       </div>
 
-      <div class="col-md-4 mb-5">
+      <div class="col-md-2 mb-5">
+        <!--
         <div>
           <h2>Contact Us</h2>
           <hr>
@@ -168,51 +189,23 @@
             <li><a href="https://twitter.com/PennRadiology">Penn Radiology Twitter</a></li>
           </ul>
         </div>
+      -->
+
+        <div>
+          <h3>Quick links</h3>
+          <hr>
+          <ul>
+            <li><a href="data.html">Code & Tools</a></li>
+            <li><a href="http://github.com/PennPancreaticCancerImagingResource">PennU24 Github</a></li>
+            <li><a href="https://imaging.cancer.gov/programs_resources/co_clinical_imaging_research_program.htm">NIH CIRP Sites</a></li>
+            <li><a href="https://www.pennmedicine.org/for-patients-and-visitors/find-a-program-or-service/radiology">Penn Radiology</a></li>
+          </ul>
+        </div>
+
 
     </div>
 
-
-    <!--
-    <div class="row">
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
-
+  </div>
   </div>
   <!-- /.container -->
 

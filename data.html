@@ -23,7 +23,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <!--<a class="navbar-brand" href="#"><img class="logo" src="imgs/psom_logo_white@2x.png" alt="PSOM logo" height="40"></a>-->
+      <img class="logo" src="imgs/psom_logo_white@2x.png" alt="PSOM logo" height="10">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,24 +32,45 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownAboutLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">About</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPubsLink">
+              <a class="dropdown-item" href="about.html">Project Aims</a>
+              <a class="dropdown-item" href="about.html#team">The Team</a>
+              <a class="dropdown-item" href="about.html#facilities">Facilities</a>
+              <a class="dropdown-item" href="about.html#links">CIRP Links</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="data.html" id="navbarDropdownResourceLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">Tools & Resources</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownResourceLink">
+              <a class="dropdown-item" href="data.html">Code & Analysis Tools</a>
+              <a class="dropdown-item" href="data.html#data">Imaging Datasets</a>
+              <a class="dropdown-item" href="data.html#pda">PDA Models</a>
+              <a class="dropdown-item" href="data.html#sop">SOP Directories</a>
+              <a class="dropdown-item" href="https://github.com/PennPancreaticCancerImagingResource">Github Organization</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="data.html" id="navbarDropdownPubsLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">Reseach Dissemination</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPubsLink">
+              <a class="dropdown-item" href="pubs.html">Publications</a>
+              <a class="dropdown-item" href="pubs.html">Abstracts & Proceedings</a>
+              <a class="dropdown-item" href="pubs.html">Presentations</a>
+            </div>
+          </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="personnel.html">Personnel</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="models.html">PDA Models</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Data
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/PennPancreaticCancerImagingResource">GitHub</a>
-          </li>
+
         </ul>
       </div>
     </div>
   </nav>
+
 
   <!-- Header -->
   <header class="bg-primary py-5 mb-5">
@@ -76,105 +97,205 @@
 
   <!-- Page Content -->
   <div class="container">
+    <div class="row">
+      <div class="card-deck">
+        <div class="card text-center bg-light">
+          <div class="card-header"><h5><a href="#code">Code & Tools</a></h5></div>
+          <div class="card-body">
+            <p>Here we provide the software used to analyze the pre-clincal and patient data</p>
+          </div>
+        </div>
+
+        <div class="card text-center bg-light">
+          <div class="card-header"><h5><a href="#data">Imaging Datasets</a></h5></div>
+          <div class="card-body">
+            <p>Pre-clininical and clinical MR imaging datasets are provided along with manually defined lesion masks</p>
+          </div>
+        </div>
+
+
+        <div class="card text-center bg-light">
+          <div class="card-header"><h5><a href="#pda">PDA Models</a></h5></div>
+          <div class="card-body">
+            <p>Genetically engineered mouse (GEM) models are used to study the development of pancreatic ductal adenocarcinoma.</p>
+          </div>
+        </div>
+
+        <div class="card text-center bg-light">
+          <div class="card-header"><h5><a href="#sop">SOP Directory</a></h5></div>
+          <div class="card-body">
+            <p>Protocols on animal modes, imaging, and processing.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </br>
 
     <div class="row">
-      <div class="col-md-8 mb-5">
-        <h2>Access to data</h2>
+      <div class="col-md-12 mb-12">
+        <h2 id="code">Code & Tools</h2>
+        <hr class="thickhr">
+        <h3>VarianSliceConvert</h3>
+        <div class="row">
+
+          <div class="col-9">
+            <div>
+              <p><em>Description:</em> This is a command line tool that allows for the conversion of Varian files (typically named with the .fdf extension) to be converted to more commonly used image formats such nifti</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <em>Resource Type:</em> Software</br>
+            <em>Site:</em> Github.com</br>
+            <em>Link:</em> <a href="https://github.com/PennPancreaticCancerImagingResource/VarianSliceConvert">VarianSliceConvert</a></br>
+            <em>Research Area:</em> Image processing & analysis
+          </div>
+        </div>
+
+<!--
         <hr>
-        <div class="personnel">
-          <p>A data repository is currently being developed and is available <a href="https://github.com/PennPancreaticCancerImagingResource/MouseDiffusionImaging">here</a>. For anyone who requests access to our data, we like to stipulate the following:</p>
-          <p>
-          <ol>
-            <li>Please describe how the data will be used and how they may help your studies.</li>
-            <li>Please cite the paper below in your publications to which our data have contributed.<br /><br />
-            Cao J, Song HK, Yang H, Castillo V, Chen J, Clendenin C, Rosen M, Zhou R, Pickup S. Respiratory Motion Mitigation and Repeatability of Two Diffusion-Weighted MRI Methods Applied to a Murine Model of Spontaneous Pancreatic Cancer. Tomography. 2021; 7(1):66-79. <a href="https://doi.org/10.3390/tomography7010007">https://doi.org/10.3390/tomography7010007</a></li>
-          </ol>
-          <hr />
+        <h3>Other Image Analysis Tool</h3>
+        <div class="row">
 
-          <br />
+          <div class="col-9">
+            <div>
+              <p><em>Description:</em> This tool provides a method to reconstruct diffusion MR data</p>
+              <p><em>Reference:</em> Author A, Author B. Title of Paper About the Method. Journal. 2021; 7(1):66-79. <a href="link">DOI</a></li></p>
+            </div>
+          </div>
+          <div class="col-3">
+            <em>Resource Type:</em> Software</br>
+            <em>Site:</em> Github.com</br>
+            <em>Link:</em> <a href="https://github.com/PennPancreaticCancerImagingResource/DeadLink">Coming Soon</a></br>
+            <em>Research Area:</em> Image processing & analysis, Diffusion MR
+          </div>
         </div>
-
+-->
       </div>
-      <div class="col-md-4 mb-5">
-        <div>
-          <h2>Contact Us</h2>
-          <hr>
-          <address>
-            <strong>Penn Quantitative Imaging Resource for Pancreatic Cancer</strong>
-            <br>Perelman School of Medicine at the University of Pennsylvania
-            <br>3630 Hamilton Walk
-            <br>Philadelphia, PA 19104
-            <br>
-          </address>
-          <address>
-            <abbr title="Phone">P:</abbr>
-            (215) 746-8747
-            <br>
-            <abbr title="Email">E:</abbr>
-            <a href="mailto:#">U24MRI@pennmedicine.upenn.edu</a>
-          </address>
-          <address>
-            <img src="imgs/square_map.91a97522.jpg" width="200" alt="map">
-          </address>
-        </div>
-
-        <div>
-          <h2>Links of Interest</h2>
-          <hr>
-          <ul>
-            <li><a href="http://www.upenn.edu/">University of Pennsylvania</a></li>
-            <li><a href="http://www.med.upenn.edu/">Perelman School of Medicine</a></li>
-            <li><a href="https://www.pennmedicine.org/cancer">Abramson Cancer Center</a></li>
-            <li><a href="https://www.med.upenn.edu/pcrc/">Penn Pancreatic Cancer Research Center</a></li>
-            <li><a href="https://nciphub.org/groups/cirphub">Co-Clinical Imaging Research Resources Program Network (CIRP)</a></li>
-            <li><a href="https://twitter.com/PennRadiology">Penn Radiology Twitter</a></li>
-          </ul>
-        </div>
-
     </div>
 
+    </br>
 
-    <!--
     <div class="row">
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+      <div class="col-md-12 mb-12">
+        <h2 id="data">Imaging Datasets</h2>
+        <hr class="thickhr">
+        <h3>Mouse Test-Retest at 4.7T</h3>
+        <div class="row">
+
+          <div class="col-9">
+            <div>
+              <p><em>Description:</em> Test-Retest Diffusion imaging in 10 mice. Includes original data as well as derived images such as: ADC, M0, M0 standard deviation, BL, and BL standard deviation.</p>
+              <p><em>Reference:</em> Cao J, Song HK, Yang H, Castillo V, Chen J, Clendenin C, Rosen M, Zhou R, Pickup S. Respiratory Motion Mitigation and Repeatability of Two Diffusion-Weighted MRI Methods Applied to a Murine Model of Spontaneous Pancreatic Cancer. Tomography. 2021; 7(1):66-79. <a href="https://doi.org/10.3390/tomography7010007">https://doi.org/10.3390/tomography7010007</a></li></p>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+          <div class="col-3">
+            <p>
+              <em>Resource Type:</em> Image Data</br>
+              <em>Site:</em> Github.com</br>
+              <em>Link:</em> <a href="https://github.com/PennPancreaticCancerImagingResource/MouseDiffusionImaging">MouseDiffusionImaging</a></br>
+              <em>Research Area:</em> Diffusion Imaging
+            </p>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+
+        <hr>
+
+        <h3>Representative Clinical Imaging</h3>
+        <div class="row">
+
+          <div class="col-9">
+            <div>
+              <p><em>Description:</em>This dataset includes baseline and post-treatment diffusion-weighted MRI (DW-MRI) and dynamic contrast-enhanced MRI (DCE-MRI) from a pancreatic cancer patient enrolled in clinical trial entitled “A Randomized Pilot Study of Perioperative Nivolumab and Paricalcitol to Target the Microenvironment in Resectable Epithelial Subtype Pancreatic Cancer” (NCT03519308).</p>
+              <p><em>Reference:</em></li></p>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+          <div class="col-3">
+            <p>
+              <em>Resource Type:</em> Image Data</br>
+              <em>Site:</em> Github.com</br>
+              <em>Link:</em> <a href="https://github.com/PennPancreaticCancerImagingResource/U24ClinicalImaging">U24ClinicalImaging</a></br>
+              <em>Research Area:</em> Diffusion Imaging
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <h3>Representative Dataset at 9.4T</h3>
+        <div class="row">
+
+          <div class="col-9">
+            <div>
+              <p><em>Description:</em> Represenative dataset for diffusion imaging in mice at 9.4T </p>
+              <p><em>Reference:</em> Author A, Author B. Title of Paper About the Method. Journal. 2021; 7(1):66-79. <a href="link">DOI</a></li></p>
+            </div>
+          </div>
+          <div class="col-3">
+            <em>Resource Type:</em> Image Data</br>
+            <em>Site:</em> Github.com</br>
+            <em>Link:</em> <a href="https://github.com/PennPancreaticCancerImagingResource/U24PreClinicalImaging">U24PreClinicalImaging</a></br>
+            <em>Research Area:</em> Diffusion MR
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </br>
+
+    <div class="row">
+      <div class="col-md-12 mb-12">
+        <h2 id="pda">Pancreatic Ductal Adenocarcinoma (PDA) Models</h2>
+        <hr class="thickhr">
+        <div class="row">
+
+          <div class="col-9">
+            <div>
+              <p><em>Description:</em> PDA development is accompanied by the formation of a unique tumor microenvironment, i.e., a dense and complex stroma that includes fibroblasts, blood vessels, and immune cells. It is well known that pancreatic cancer stroma is best modeled in autochthonous tumors, which arise spontaneously from the native locations as the result of genetic mutations. Therefore, to study stromal interventions, the genetically engineered mouse (GEM) models are strongly preferred.</p>
+              <p>Mice harboring a pancreas specific Kras and p53 mutant with Cre alleles (KPC) were initially developed at Penn (<a href="https://www.ncbi.nlm.nih.gov/pubmed/14706336">Reference Paper</a>) and is bred at the Mouse Hospital of Penn Pancreatic Cancer Research Center (For more information, download the Overview <a href="docs/penn-pancreatic-cancer-mouse-hospital-overview-20181118.pdf">PDF</a>).</p>
+              <p>Besides the GEM model, we have established orthotopic allograft model and xenograft (human PDA cell line) model. Both models are described in a <a href="http://clincancerres.aacrjournals.org/content/early/2019/02/07/1078-0432.CCR-18-2276.long">Clinical Cancer Research paper</a>, which compares the DCE-MRI results from KPC, orthotopic allograft and xenograft models.</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <p>
+              <em>Resource Type:</em> GEM Model</br>
+              <em>Site:</em> Github.com</br>
+              <em>Link:</em> <a href="docs/penn-pancreatic-cancer-mouse-hospital-overview-20181118.pdf">Overview (pdf)</a></br>
+              <em>Research Area:</em> Pancreatic cancer
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-  -->
+  </br>
+
+  <div class="row">
+    <div class="col-md-12 mb-12">
+      <h2 id="code">SOP Directory</h2>
+      <hr class="thickhr">
+      <h3>Diffusion MRI of mouse abdomen</h3>
+      <div class="row">
+
+        <div class="col-9">
+          <div>
+            <p><em>Description:</em> Diffusion MRI of mouse abdomen</p>
+            <p><em>Reference:</em> </p>
+          </div>
+        </div>
+        <div class="col-3">
+          <em>Resource Type:</em> SOP</br>
+          <em>Site:</em> Protocols.io</br>
+          <em>Link:</em> <a href="https://www.protocols.io/view/diffusion-weighted-mri-of-mouse-abdomen-by34pyqw">SOP</a></br>
+          <em>Research Area:</em> Diffusion Imaging
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
 
   </div>
   <!-- /.container -->

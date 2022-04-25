@@ -33,6 +33,10 @@ hr.thickhr {
   border-top: 8px solid #990000;
 }
 
+hr.whitehr {
+  border-top: 1px solid white;
+}
+
 .bg-blue {
   background-color: #011F5B33;
 }

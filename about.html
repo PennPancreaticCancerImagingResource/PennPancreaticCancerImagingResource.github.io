@@ -23,56 +23,40 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <!--<a class="navbar-brand" href="#"><img class="logo" src="imgs/psom_logo_white@2x.png" alt="PSOM logo" height="40"></a>-->
-      <img class="logo" src="imgs/psom_logo_white@2x.png" alt="PSOM logo" height="10">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <img class="logo" src="imgs/psom_logo_white@2x.png" alt="PSOM logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownAboutLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">About<span class="sr-only">(current)</span></a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownPubsLink">
-              <a class="dropdown-item" href="about.html">Project Aims</a>
-              <a class="dropdown-item" href="about.html#team">The Team</a>
-              <a class="dropdown-item" href="about.html#facilities">Facilities</a>
-              <a class="dropdown-item" href="about.html#links">CIRP Links</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="imagedata.html">Imaging Data</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="code.html">Analysis Tools</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="protocols.html">Protocols</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="data.html" id="navbarDropdownPubsLink" data-toggle="dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">Reseach Dissemination</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownPubsLink">
-              <a class="dropdown-item" href="pubs.html">Publications</a>
-              <a class="dropdown-item" href="pubs.html">Abstracts & Proceedings</a>
-              <a class="dropdown-item" href="pubs.html">Presentations</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-
+          <li class="nav-item active">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="protocols.html">SOPs & Protocols</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="imagedata.html">Imaging Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="code.html">Analysis Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pubs".html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
         </ul>
       </div>
     </div>
   </nav>
+
+
 
   <!-- Header -->
   <header class="bg-primary py-5 mb-5">
@@ -80,9 +64,6 @@
       <!--<div class="row h-100 align-items-center">-->
       <div class="row">
         <div class="col-lg-2"></div>
-        <!--<div class="col-lg-2 mt-2">
-          <img class="psom" src="imgs/psom_logo_white@2x.png" width="100" alt="PSOM logo">
-        </div> -->
         <div class="col-lg-8 text-center">
           <h1 class="text-white mb-2">Penn Quantitative Imaging Resource for Pancreatic Cancer</h1>
           <br />
@@ -91,7 +72,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12 text-center">
-          <img class="banner rounded" src="imgs/slide2.3fe3493c.jpg">
+          <img class="banner rounded" src="imgs/banner.png">
         </div>
       </div>
     </div>
@@ -101,539 +82,168 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-12 mb-2">
-        <div>
-          <h2 id="aims">About UPenn Co-Clinical Imaging Resource Program (U24)</h2>
-          <hr class="thickhr"/>
-        </div>
-      </div>
-    </div>
+      <div class="col-md-10 mb-5">
 
-    <div class="row mb-12">
-      <div class="col-md-3 mb-3">
-        <div class="card text-center bg-light">
-          <div class="card-body">
-            <h5 class="card-title"><a href="#aims">Project Aims</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="card text-center bg-light">
-          <div class="card-body">
-            <h5 class="card-title"><a href="#team">Team</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="card text-center bg-light">
-          <div class="card-body">
-            <h5 class="card-title"><a href="#facilities">Facilities</a></h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <div class="card text-center bg-light">
-          <div class="card-body">
-            <h5 class="card-title"><a href="#links">CIRP Links</a></h5>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="row"><div class="col-md-12">
+          <h2>Mission</h2>
+          <hr class="thickhr">
+          <p>Our mission is to facilitate the development of effective therapies for pancreatic ductal adenocarcinoma (PDA) via the applications of imaging tools. We strive to develop robust imaging tools in murine models of PDA and translate them to the clinic in settings of co-clinical imaging.</p>
+        </div></div>
 
-    <br />
 
-    <div class="row">
-      <div class="col-md-12 mb-2">
-        <div>
-          <h2 id="aims">Project Aims</h2>
-          <hr class="thickhr"/>
+        <div class="row"><div class="col-md-12">
+          <p><h2>What's on the  Website</h2></p>
+          <hr class="thickhr">
+
+          <div class="row">
+            <div class="col-md-3 mb-3 d-flex">
+              <div class="card bg-blue">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title"><a href="protocols.html">SOPs and Protocols</a></h5>
+                  <hr />
+                  <p class="card-text">Documents describing the procedures for acquiring, processing and analyzing data for pre-clinical and clinical data.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 d-flex">
+              <div class="card bg-blue">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title"><a href="imagedata.html">Imaging Datasets</a></h5>
+                  <hr />
+                  <p class="card-text">Shared imaging datasets, including both small represenative datasets and full datasets for completed studies.</p>
+                </div>
+              </div>
+            </div>        
+            <div class="col-md-3 mb-3 d-flex">
+              <div class="card bg-blue">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title"><a href="code.html">Analysis Tools</a></h5>
+                  <hr />
+                  <p class="card-text">Source code for the processing and analysis of the data.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 d-flex">
+              <div class="card bg-blue">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title"><a href="publications.html">Publications</a></h5>
+                  <hr />
+                  <!--<h6 class="card-subtitle mb-2 text-muted">Informatics</h6>-->
+                  <p class="card-text">References and links to abstracts, presentations, and peer-reviewed manuscripts detailing the various aspects of the project.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          
+          <p>We will be making updates over the course of the U24CA231858 project (9/2018-8/2023). As the project develops, we will share resources and imaging data produced in the project</p>
+          <!--<ul>
+            <li>Imaging tool library - Tools including MRI pulse programs and data analysis software developed.</li>
+            <li>SOP library – standardized protocols for generations of orthotopic and xenograft models.</li>
+            <li>Data repository – preclinical imaging data and IHC data; clinical imaging data and companion clinical information</li>
+          </ul>
+          <br>-->
+        </div></div>
+
+        <div class="row"><div class="col-md-12">
+        <h2>News</h2>
+        <hr class="thickhr">
+
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <h5 class="card-header text-center bg-blue">Welcome Professor James Gee and Jeffrey Duda, PhD to join the U24 team!</h5>
+              <div class="card-body flex-fill d-flex flex-column">
+                <p class="card-text">Drs Gee and Duda bring in outstanding expertise in informatics and will work on resource/ data sharing aspects of the U24 project while collaborating with team members in cross-modality registration and analysis.</p>
+                <br />
+                <p class="text-center"><em>September 1, 2020</em></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-<!--
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
+        <br />
 
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Diagram of the big picture">
-          <div class="card-body">
-            <h5 class="card-title">Big Picture</h5>
-            <p class="card-text">Caption for the big picture diagram</p>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <h5 class="card-header text-center bg-blue">IRB approval of “A Randomized Pilot Study of Perioperative Nivolumab and Paricalcitol to Target the Microenvironment in Resectable Epithelial Subtype Pancreatic Cancer (NCT03519308)”.</h5>
+              <div class="card-body flex-fill d-flex flex-column">
+                <p class="card-text">University of Pennsylvania Institutional Review Board (IRB) has approved the latest modifications of this trial including the MRI studies which are supported by the U24 resource grant. The MRI protocols on this trial has also been approved by the Center for Magnetic Resonance Imaging & Spectroscopy (CAMRIS).Dr. Peter O’Dwyer, MD is the Principal Investigator of this trial, leading an investigator team from the University of Pennsylvania Abramson Cancer Center, Memorial Sloan Kettering Cancer Center, Salk Institute, and Massachusetts General Hospital. The U24 team members who participate in this clinical study include Drs. Peter O’Dwyer, Thomas Karasic, Mark Rosen, Hee Kwon Song, Rong Zhouand James Gee.</p>
+                <br />
+                <p class="text-center"><em>July 23, 2020</em></p>
+              </div>
+            </div>
           </div>
         </div>
 
-      </div>
-      <div class="col-md-2"></div>
-    </div>
 
-    <br />
--->
-    <div class="row">
-      <div class="col-md-4 mb-4 d-flex">
-        <div class="card bg-blue">
-          <div class="card-body flex-fill">
-            <h5 class="card-title">Aim 1</h5>
-            <p class="card-text">Optimize the preclinical MRI protocols to improve their robustness to respiratory motion-induced corruption, distortion and blur. Assess the repeatability of quantitative imaging markers in GEM model of pancreatic cancer.</p>
-          </div>
-          <hr />
-          <div class="mt-auto mx-auto text-center mb-2">
-            <img src="imgs/quantitativeimaging.png" width="25%"/>
-            <img src="imgs/animalmodels.png" width="25%" />
-          </div>
-        </div>
       </div>
-      <div class="col-md-4 mb-4 d-flex">
-        <div class="card bg-blue">
-          <div class="card-body flex-fill">
-            <h5 class="card-title">Aim 2</h5>
-            <p class="card-text">Design and perform preclinical studies that match an ongoing clinical trial that evaluate the stroma-directed agent on pancreatic cancer microenvironment. Perform co-clinical imaging studies in human and GEM model.</p>
-          </div>
-          <hr />
-          <div class="mt-auto mx-auto text-center  mb-2">
-             <img src="imgs/empty.png" width="25%" />
-            <img src="imgs/coclinicaltrials.png" width="25%" />
-            <img src="imgs/empty.png" width="25%" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 d-flex">
-        <div class="card bg-blue">
-          <div class="card-body flex-fill">
-            <h5 class="card-title">Aim 3</h5>
-            <!--<h6 class="card-subtitle mb-2 text-muted">Informatics</h6>-->
-            <p class="card-text">Build a web resource to demonstrate the effective optimizations of the motion-robust methods, share protocols, tools and SOPs. Enhance the accessibility, clarity and sustainability of the webpage.</p>
-          </div>
-          <hr />
-          <div class="mt-auto mx-auto text-center mb-2">
-            <img src="imgs/empty.png" width="25%" />
-            <img src="imgs/informatics.png" width="25%" />
-            <img src="imgs/empty.png" width="25%" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--<div class="row"><div class="col mb-4">
-      <h3 class="text-center">Project Title</h3>
     </div></div>
-    -->
 
-    <div class="row mb-4">
-      <div class="col-md-1"></div>
-      <div class="col-md-10 text-center">
-        <img src="imgs/bigpicture2.png" width="100%" alt="big picture diagram">
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <!--
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <p>One of two sentence summary of project.</p>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-    -->
-
-<!--
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <p>Preclinical quantitative imaging (QI) and mouse tumor models bridge the gap between the discovery of new therapeutic targets and the ultimate proof of their efficacy in cancer patients. The Penn Quantitative MRI Resource for Pancreatic Cancer aims to standardize quantitative imaging methods optimized for biologically relevant mouse models to accelerate the development of novel therapies for pancreatic ductal adenocarcinoma (PDA). PDA is featured by a dense stroma, which constitutes a unique tumor microenvironment that resists drug penetration and is immune suppressive. Successful stroma-directed interventions can be a vital part of effective PDA management. Although several stroma-directed drugs are being examined in the clinic, QI markers are not available for evaluating stroma responses in mice or patients. We have identified translational motion sensitive MRI markers which can detect changes of the tumor microenvironment, and we propose to examine their utility for stroma-directed interventions. However the preclinical imaging techniques are suboptimal for studying orthotopic tumors in locations susceptible to respiratory/cardiac motion such as the pancreas. Importantly, the motion-robust imaging must be achieved simultaneously with adequate temporal resolution required by the dynamic imaging protocol, the spatial resolution required to resolve the small size targets. Our prior success in the development and optimization of preclinical and clinical MRI methodology provides a roadmap to accomplish the mission of optimizing the preclinical motion-sensitive MRI techniques to match the advanced clinical benchmarks. Our Resource will leverage the substantial institutional resources including the Mouse Hospital of PENN Pancreatic Cancer Center, which provides the genetically engineered mouse (GEM) models of PDA credentialed for studying stroma-directed interventions. The strong collaboration with our industrial partner has led to the design of a co-clinical trial that includes a prospective phase-II clinical trial and a preclinical trial, where the utility of QI markers will be tested in both patients and mice responding to the same treatment of an investigational stromal drug. A multi-expertise team and an Advisory committee will join force to achieve the technical transformation, conduct the co-clinical trial and build the Resource web-portal to disseminate all workflow documents, research tools and QA/QC phantoms and to share the novel data content.</p>
-
-        <h4>Public Health Relevance</h4>
-        <p>High quality and reproducible quantitative imaging markers applicable to realistic mouse models are important for testing new treatment modalities for the pancreatic cancer. By applying the state-of-the-art optimization methods, we will enable the preclinical MRI techniques that are sensitive to changes of the tumor microenvironment to study mice bearing spontaneous pancreatic cancer. We will build a Resource web portal to share all the data, the technical know-how and workflow documents with the research community.</p>
-        <p>NIH U24CA231858</p>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-
-    <br />
-
-    <div class="row">
-      <div class="col-md-12 mb-2">
-        <h2 id="team">Personnel</h2>
-        <hr class="thickhr" />
-      </div>
-    </div>
-
-    <div class="row mb-2">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <img class="text-center" src="imgs/u24team.png" alt="Org Chart" border="0px" style="border: 0px; width: 100%">      </div>
-      <div class="col-md-1"></div>
-    </div>
--->
-
-
-<!--    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-
-        <div class="card border-0">
-          <div class="card-body">
-            <img class="card-img-top" src="imgs/u24team.png" alt="Org Chart" border="0px" style="border: 0px">
-          </div>
+      <div class="col-md-2 mb-5">
+        <!--
+        <div>
+          <h2>Contact Us</h2>
+          <hr>
+          <address>
+            <strong>Penn Quantitative Imaging Resource for Pancreatic Cancer</strong>
+            <br>Perelman School of Medicine at the University of Pennsylvania
+            <br>3630 Hamilton Walk
+            <br>Philadelphia, PA 19104
+            <br>
+          </address>
+          <address>
+            <abbr title="Phone">P:</abbr>
+            (215) 746-8747
+            <br>
+            <abbr title="Email">E:</abbr>
+            <a href="mailto:#">U24MRI@pennmedicine.upenn.edu</a>
+          </address>
+          <address>
+            <img src="imgs/square_map.91a97522.jpg" width="200" alt="map">
+          </address>
         </div>
 
-      </div>
-      <div class="col-md-1"></div>
-    </div>
--->
-
-    <br />
-
-    <div class="row">
-      <div class="col-md-12 mb-2">
-        <h2 id="team">Personnel</h2>
-        <hr class="thickhr" />
-      </div>
-    </div>
-
-
-
-    <div class="row">
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Rong Zhou, PhD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/rong-zhou.ce3866e4.jpg" alt="Rong Zhou, PhD" >
-
-            <h6 class="card-title text-muted">Professor of Radiology</h6>
-            <p class="card-text"><em>Preclinical / Clinical Trials & Quantitative Imaging Methods</em></p>
-            <a href="https://www.med.upenn.edu/apps/faculty/index.php/g334/p4498" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
+        <div>
+          <h2>Links of Interest</h2>
+          <hr>
+          <ul>
+            <li><a href="http://www.upenn.edu/">University of Pennsylvania</a></li>
+            <li><a href="http://www.med.upenn.edu/">Perelman School of Medicine</a></li>
+            <li><a href="https://www.pennmedicine.org/cancer">Abramson Cancer Center</a></li>
+            <li><a href="https://www.med.upenn.edu/pcrc/">Penn Pancreatic Cancer Research Center</a></li>
+            <li><a href="https://nciphub.org/groups/cirphub">Co-Clinical Imaging Research Resources Program Network (CIRP)</a></li>
+            <li><a href="https://twitter.com/PennRadiology">Penn Radiology Twitter</a></li>
+          </ul>
         </div>
-      </div>
+      -->
 
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Peter O`Dwyer, MD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/odwyer-peter.02e064ba.jpg" alt="Peter O'Dwyer, MD" >
-
-            <h6 class="card-title text-muted">Director, Developmental Therapeutics Program</h6>
-            <p class="card-text"><em>Clinical Trials</em></p>
-            <a href="https://www.pennmedicine.org/providers/profile/peter-odwyer" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
+        <div>
+          <h3>Quick links</h3>
+          <hr>
+          <ul>
+            <li><a href="code.html">Analysis Code</a></li>
+            <li><a href="iamgedata.html">Sample Data</a></li>
+            <li><a href="http://github.com/PennPancreaticCancerImagingResource">PennU24 Github</a></li>
+            <li><a href="https://imaging.cancer.gov/programs_resources/co_clinical_imaging_research_program.htm">NIH CIRP Sites</a></li>
+            <li><a href="https://www.pennmedicine.org/for-patients-and-visitors/find-a-program-or-service/radiology">Penn Radiology</a></li>
+          </ul>
         </div>
-      </div>
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Mark A. Rosen, MD, PhD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/rose9535.02e064ba.jpg" alt="Mark A. Rosen, MD, PhD" >
-
-            <h6 class="card-title text-muted">Division Chief, Abdominal Imaging</h6>
-            <p class="card-text"><em>Clinical Trials</em></p>
-            <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p3094" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Stephen Pickup, PhD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/placeholder.png" alt="Stephen Pickup, PhD" >
-
-            <h6 class="card-title text-muted">Director, Magnetic Resonance Imaging and Spectroscopy Sub-Core</h6>
-            <p class="card-text"><em>Quantitative Imaging Methods</em></p>
-            <a href="#" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <br/>
-
-    <div class="row">
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Hee Kwon Song, PhD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/song-edited.ce3866e4.jpg" alt="Hee Kwon Song, PhD" >
-
-            <h6 class="card-title text-muted">Associate Professor of Radiologic Science</h6>
-            <p class="card-text"><em>Quantitative Imaging Methods</em></p>
-            <a href="https://www.med.upenn.edu/apps/faculty/index.php/g334/p15280" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Thomas Karasic, MD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/karasic-thomas-edited.ce3866e4.jpg" alt="Thomas Karasic, MD" >
-
-            <h6 class="card-title text-muted">Assistant Professor of Medicine</h6>
-            <p class="card-text"><em>Clinical Trials</em></p>
-            <a href="https://www.pennmedicine.org/providers/profile/thomas-karasic" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Emma Furth, MD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/furth-emma9788.db40d567.jpg" alt="Emma Furth, MD" >
-
-            <h6 class="card-title text-muted">Professor of Pathology and Laboratory Medicine</h6>
-            <p class="card-text"><em>Clinical Trials</em></p>
-            <a href="http://pathology.med.upenn.edu/department/people/422/emma-e-furth" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Cynthia Clendenin, VMD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/cynthia-edited.ce3866e4.jpg" alt="Cynthia Clendenin, PhD" >
-
-            <h6 class="card-title text-muted">Scientific Director, Pancreatic Cancer Mouse Hospital</h6>
-            <p class="card-text"><em>Preclinical trials</em></p>
-            <a href="https://www.med.upenn.edu/pcrc/resources.html" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <br />
-
-    <div class="row">
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Jinbo Chen, PhD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/jinbo-chen-edited.ce3866e4.jpg" alt="Jinbo Chen, PhD" >
-
-            <h6 class="card-title text-muted">Professor Of Biostatistics In Biostatistics And Epidemiology</h6>
-            <p class="card-text"><em>Preclinical / Clinical Trials</em></p>
-            <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p8122952" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">Yong Phan, PhD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/fan.1b8c09f3.png" alt="Yong Phan, MD" >
-
-            <h6 class="card-title text-muted">Assistant Professor of Radiology</h6>
-            <p class="card-text"><em>Quantitative Imaging Methods</em></p>
-            <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p4257219" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">James C. Gee, PhD</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="rounded portrait mx-auto mb-2" src="imgs/gee0901.02e064ba.jpg" alt="James C. Gee, PhD" >
-
-            <h6 class="card-title text-muted">Associate Professor of Radiologic Science and Computer and Information Science</h6>
-            <p class="card-text"><em>Web Resources</em></p>
-            <a href="https://www.med.upenn.edu/apps/faculty/index.php/g5455356/p10656" class="mt-auto mx-auto btn btn-primary">View full profile ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col d-flex"></div>
-
-    </div>
-
-<!--
-
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <h3>Leadership Team</h3>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/rong-zhou.ce3866e4.jpg" width="100" alt="Rong Zhou, PhD">
-          <h4>Rong Zhou, PhD</h4>
-          <h5>Professor of Radiology, Full member of Abramson Cancer Center, University of Pennsylvania</h5>
-          <p>Dr. Zhou was trained as a biophysicist and has a strong track record in developing in vivo quantitative imaging tools that can be translated to the clinic. She has integrated these imaging tools in the development of novel therapeutic approaches targeting cancer microenvironment, bioenergetics and glutamine metabolism in mouse models. She will co-lead the development of this imaging resource that includes (1) optimization of the preclinical quantitative MRI methods for probing tumor microenvironment, (2) conducting the co-clinical trial (in mice and in human) in which the utilities of imaging tools will be examined, and finally (3) outreaching to research community via sharing of data and resources developed in this project.</p>
-          <p><a href="https://www.med.upenn.edu/apps/faculty/index.php/g334/p4498">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/odwyer-peter.02e064ba.jpg" width="100" alt="Peter O’Dwyer, MD">
-          <h4>Peter O’Dwyer, MD</h4>
-          <h5>Director, Developmental Therapeutics Program, Abramson Cancer Center</h5>
-          <p>Peter O’Dwyer, MD, is a Professor of Medicine at the Hospital of the University of Pennsylvania and the Presbyterian Medical Center of Philadelphia. Dr. O’Dwyer received his MD from The University of Dublin, Trinity College Dublin, Ireland, in 1975. He was a Resident in Pediatrics from Waterbury Hospital, Waterbury, Connecticut (1976-1979), and a Resident in Internal Medicine, Greater Baltimore Medical Center, Baltimore, Maryland (1979-1981). Dr O’Dwyer specializes in gastrointestinal oncology, and is an expert at the Penn Pancreatic Cancer Research Center.</p>
-          <p><a href="https://www.pennmedicine.org/providers/profile/peter-odwyer">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/rose9535.02e064ba.jpg" width="100" alt="Mark A. Rosen, MD, PhD">
-          <h4>Mark A. Rosen, MD, PhD</h4>
-          <h5>Division Chief, Abdominal Imaging, Hospital Of The University Of Pennsylvania</h5>
-          <p>Dr. Mark Rosen is a radiologist in Philadelphia, Pennsylvania and is affiliated with multiple hospitals in the area, including Hospitals of the University of Pennsylvania-Penn Presbyterian and Penn Presbyterian Medical Center. He received his medical degree from Columbia University College of Physicians & Surgeons and has been in practice for more than 20 years. He specializes in diagnostic radiology and is an expertise at Functional Tumor MR Imaging research and Morphologic Tumor Response Evaluation.</p>
-          <p><a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p3094">View Full Profile ></a></p>
-          <br />
-        </div>
-
-        <h3>Coinvestigators</h3>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/placeholder.png" width="100" alt="Stephen Pickup, PhD">
-          <h4>Stephen Pickup, PhD</h4>
-          <h5>Director, Magnetic Resonance Imaging and Spectroscopy Sub-Core</h5>
-          <p>Dr Pickup has been responsible for the support and maintenance of MR spectrometers for preclinical in vivo MRI/S since 1999 and has served as the technical director of the Small Animal Imaging Facility (SAIF) in the Department of Radiology at the University of Pennsylvania since it was founded in spring of 2006.  Dr Pickup also serves as the Director of the magnetic resonance sub core of SAIF and has been responsible for a major modernization and expansion of the magnetic resonance facilities. Under his direction and with the successful development/optimization of a variety of MR imaging/spectroscopic techniques, the use of the core resource has grown steadily. He has worked with and trained numerous graduate students, post doctoral students and faculty members.  Dr Pickup has mentored three PhD students and coauthored approximately 75 publications.</p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/song-edited.ce3866e4.jpg" width="100" alt="Hee Kwon Song, PhD">
-          <h4>Hee Kwon Song, PhD</h4>
-          <h5>Associate Professor of Radiologic Science in Radiology</h5>
-          <p>Dr. Song is a biomedical engineer with a strong background in MRI physics and expertise in various areas of MRI engineering. Dr. Song has extensive experience in developing novel dynamic imaging strategies in MRI. For over a decade, his research has focused on the development of dynamic contrast-enhanced (DCE-) MRI strategies based on novel radial data acquisition and reconstruction methods that allow ultra-rapid dynamic imaging at both high spatial and high temporal resolutions. Utilizing the golden angle radial acquisition strategy, Dr. Song also developed and implemented effective strategies to retrospectively compensate for respiratory motion in DCE-MRI. </p>
-          <p><a href="https://www.med.upenn.edu/apps/faculty/index.php/g334/p15280">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/karasic-thomas-edited.ce3866e4.jpg" width="100" alt="Thomas Karasic, MD">
-          <h4>Thomas Karasic, MD</h4>
-          <h5>Assistant Professor of Medicine at the Hospital of the University of Pennsylvania</h5>
-          <p>Dr Karasic was A graduate of Columbia University College of Physicians and Surgeons, Dr. Karasic was an intern and resident at the Hospital of the University of Pennsylvania, where he subsequently completed a fellowship in Hematology/Oncology. Dr. Karasic  specializes in gastrointestinal malignancies, with a focus on liver and pancreatic cancers.</p>
-          <p><a href="https://www.pennmedicine.org/providers/profile/thomas-karasic">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/furth-emma9788.db40d567.jpg" width="100" alt="Emma Furth, MD">
-          <h4>Emma Furth, MD</h4>
-          <h5>Professor of Pathology and Laboratory Medicine at the Hospital of the University of Pennsylvania</h5>
-          <p>Dr. Emma Furth, MD is an anatomic & clinical pathology specialist in Philadelphia, PA and has been practicing for 28 years. She graduated from University Of Chicago/The Pritzker School Of Medicine in 1984 and specializes in anatomic & clinical pathology and pathology.</p>
-          <p><a href="http://pathology.med.upenn.edu/department/people/422/emma-e-furth">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/cynthia-edited.ce3866e4.jpg" width="100" alt="Cynthia Clendenin, VMD">
-          <h4>Cynthia Clendenin, VMD</h4>
-          <h5>Scientific Director, Pancreatic Cancer Mouse Hospital at University of Pennsylvania</h5>
-          <p>Dr Clendenin received her VMD at Penn Veterinary Hospital. She is currently the scientific director at Mouse Hospital at Unviersity of Pennsylvania. The Pancreatic Cancer Mouse Hospital of the Abramson Cancer Center was established as a facility to conduct preclinical trials on mice. She oversees quality standard and operations of mice research.</p>
-          <p><a href="https://www.med.upenn.edu/pcrc/resources.html">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/jinbo-chen-edited.ce3866e4.jpg" width="100" alt="Jinbo Chen, PhD">
-          <h4>Jinbo Chen, PhD</h4>
-          <h5>Professor Of Biostatistics In Biostatistics And Epidemiology</h5>
-          <p>Dr. Chen’s research focuses primarily on the development of statistical methods for designing and analyzing two-phase epidemiologic studies, on methodological and collaborative work in genetic-association studies of complex diseases, and on the development and evaluation of risk-prediction models.</p>
-          <p><a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p8122952">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/fan.1b8c09f3.png" width="100" alt="Yong Fan, PhD">
-          <h4>Yong Fan, PhD</h4>
-          <h5>Assistant Professor of Radiology</h5>
-          <p>Dr. Fan’s interests are in the field of imaging analytics, machine learning, and pattern recognition, and more generally in computational imaging. Much of his work has been focusing on development and application of advanced machine learning techniques that quantify morphology and function from medical images. On the clinical side, his primary focus is on applications in clinical neuroscience, in cancer, and in chronic kidney disease, aiming to develop precision diagnostic tools using machine learning and pattern analysis.</p>
-          <p><a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p4257219">View Full Profile ></a></p>
-          <br />
-        </div>
-        <div class="personnel">
-          <img class="rounded float-left portrait" src="imgs/gee0901.02e064ba.jpg" width="100" alt="James Gee, PhD">
-          <h4>James Gee</h4>
-          <h5>Associate Professor of Radiologic Science and Computer and Information Science</h5>
-          <p>Dr. Gee directs the Penn Image Computing and Science Laboratory (PICSL). PICSL is known internationally for methodological innovations, and for accomplishments in highly acclaimed open-source software including ITK-SNAP, ANTs, DTI-TK, N4ITK and ITK, which are consistently ranked as the best performing and most widely used applications intranslating research.</p>
-          <p><a href="https://www.med.upenn.edu/apps/faculty/index.php/g5455356/p10656">View Full Profile ></a></p>
-          <br />
-        </div>
-      </div>
-    </div>
--->
-
-    <br />
-
-    <div class="row">
-      <div class="col-md-12 mb-12">
-        <h2 id="facilities">Facilities</h2>
-        <hr class="thickhr" />
-        <!--<img src="imgs/pda-model-page-picture-update.jpg">-->
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header">Penn Pancreatic Cancer Mouse Hospital</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="mx-auto mb-2" src="imgs/pda-model-page-picture-update.jpg" alt="Mouse Hospital" width="100%">
-            <br />
-            <!--<h6 class="card-title text-muted">Subtitle</h6>
-            <p class="card-text"><em>Text</em></p>-->
-            <a href="docs/penn-pancreatic-cancer-mouse-hospital-overview-20181118.pdf" class="mt-auto mx-auto btn btn-primary">Facility Website ></a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header">Small Animal Imaging Facility</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <img class="mx-auto mb-2" src="imgs/saif.png" alt="Small animal imaging" width="100%">
-            <!--<h1 class="centered">Find Appropriate Image</h1>-->
-            <br />
-            <!--<h6 class="card-title text-muted">Associate Professor of Radiologic Science and Computer and Information Science</h6>
-            <p class="card-text"><em>Web Resources</em></p>-->
-            <a href="https://www.pennmedicine.org/departments-and-centers/department-of-radiology/radiology-research/core-facilities/saif-small-animal-imaging-facility" class="mt-auto mx-auto btn btn-primary">Facility Website ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br />
-    <div class="row">
-      <div class="col-md-12 mb-12">
-        <h2 id="links">CIRP Links</h2>
-        <hr class="thickhr" />
-      </div>
-    </div>
-
-    <div class="row mb-4">
-
-      <div class="col-md-6 d-flex">
-        <div class="card text-center bg-blue" width="100%">
-          <h5 class="card-header px-0">The Co-Clincal Imaging Resources Program (U24s)</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <p class="card-text">The NCI Co-Clinical Imaging Research Resource Program (CIRP) promotes development of quantitative imaging resources for therapeutic or prevention co-clinical trials that study both patients and human-in-mouse models. The resources will encourage a consensus on optimizing quantitative imaging methods and develop standard operating procedures for co-clinical applications</p>
-
-            <a href="https://imaging.cancer.gov/programs_resources/co_clinical_imaging_research_program.htm" class="mt-auto mx-auto btn btn-primary">View site ></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 d-flex">
-        <div class="card text-center bg-blue">
-          <h5 class="card-header px-0">CIRPHub</h5>
-          <div class="card-body flex-fill d-flex flex-column">
-            <p class="card-text">CIRPHub will be used as the network workspace for intra-network communications & scientific discussions and serves as the network homepage for publishing news/events and announcing activities externally.</p>
-            <a href="https://ncihub.org/groups/cirphub" class="mt-auto mx-auto btn btn-primary">View site ></a>
-          </div>
-        </div>
-      </div>
 
 
     </div>
 
   </div>
-
+  </div>
   <!-- /.container -->
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
+      <p class="m-0 text-center text-white">The Co-Clinical Imaging Research Program (CIRP) funded by the <a href="https://imaging.cancer.gov/programs_resources/co_clinical_imaging_research_program.htm">National Institute of The Co-Clinical Imaging Research Resources Program (U24s)</a> (NIH Project Number 1U24CA253377) focuses on overcoming the translational barrier to develop co-clinical imaging research resources that will encourage a consensus on how quantitative imaging methods are optimized to improve the quality of imaging results for co-clinical trials. <a href="contact.html">Contact Penn CIRP</a>.</p>
+      <hr class="whitehr" />
       <p class="m-0 text-center text-white">Copyright &copy; The Trustees of the University of Pennsylvania 2020</p>
     </div>
     <!-- /.container -->
